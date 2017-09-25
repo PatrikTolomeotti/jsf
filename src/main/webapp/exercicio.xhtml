@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<h:form>
+		Calculadora
+		<br/>
+		<br/>
+		<h:inputText name="txtSomaPrimeiroValor" id="txtSomaPrimeiroValor"/>
+		<br/>
+		<br/>
+		<h:inputText name="txtSomaSegundoValor" id="txtSomaSegundoValor"/>
+		<br/>
+		<br/>
+		Operador
+		<select name="op">
+			<option value="somar">Somar</option>
+			<option value="subtrair">Subtrair</option>
+			<option value="multiplicar">Multiplicar</option>
+			<option value="dividir">Dividir</option>
+		</select>
+		<h:commandButton id="btnMostrarResultado" value="Mostrar Resultado" action="#{exercicioXHTML}"/>
+	</h:form>
+</h:body>
+</html>
