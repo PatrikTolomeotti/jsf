@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h2>Estados do sul</h2>
+		<h:selectOneMenu value="#{ufController.uf}">
+			<f:selectItems value="#{ufController.listaUf}" />
+		</h:selectOneMenu>
+		<h2>Sexo</h2>
+		<h:selectOneMenu value="#{ufController.sexo}">
+			<f:selectItems value="#{ufController.listaSexo}" />
+		</h:selectOneMenu>
+	</h:form>
+</h:body>
+</html>

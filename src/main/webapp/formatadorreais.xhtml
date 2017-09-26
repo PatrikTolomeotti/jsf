@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:inputText value="#{formatadorReais.reais}"/>
+		<h:commandButton value="Transformar em reais" action="#{formatadorReais.formatar()}"/>
+		<br/>
+		<h:outputLabel value="Nome: #{formatadorReais.resultado}" />
+	</h:form>
+</h:body>
+</html>
